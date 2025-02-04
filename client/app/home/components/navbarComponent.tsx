@@ -10,8 +10,8 @@ import {
 import { Menu, MoveRight } from "lucide-react";
 import Link from "next/link";
 import { Sheet, SheetTrigger, SheetContent, SheetHeader, SheetTitle, SheetDescription, SheetClose } from "@/components/ui/sheet";
-import { navigationItems } from "@/src/data/navItem";
-import LogoDark from "@/public/logo.svg"
+import { navigationItems } from "@/app/home/data/navItem";
+import LogoWhite from "@/public/logoLight.svg"
 import Image from "next/image";
 
 function NavigationMenuItemComponent({ item }: { item: typeof navigationItems[0] }) {
@@ -136,7 +136,9 @@ export function NavbarComponent() {
                     </NavigationMenu>
                 </div>
                 <div className="flex lg:justify-center mx-auto">
-                    <Image src={LogoDark} priority width={295} height={295} alt="LogoDark" />
+                    <Link href='/home'>
+                        <Image src={LogoWhite} priority width={295} height={295} alt="LogoDark" />
+                    </Link>
                 </div>
                 <div className="flex justify-end w-full gap-4">
                     {/* Botão de agendar uma consultoria fora do submenu */}

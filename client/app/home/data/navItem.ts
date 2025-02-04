@@ -6,19 +6,15 @@ export const navigationItems = [
     items: [
       {
         title: "Portal Devs",
-        href: "/web-development",
+        href: "/portal-dev",
       },
       {
         title: "Noticias",
-        href: "/mobile-development",
+        href: "/noticias",
       },
       {
         title: "Networking",
-        href: "/saas-development",
-      },
-      {
-        title: "SOS",
-        href: "/it-consulting",
+        href: "/networking",
       },
     ],
   },
